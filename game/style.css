@@ -1,0 +1,40 @@
+/* GILDED ACE — page shell. The game itself is one canvas; this file only frames it. */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: #0a0806;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+#stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#game {
+  display: block;
+  width: min(1280px, 98vw);
+  height: auto;
+  border: 3px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(212, 175, 55, 0.25), 0 20px 60px rgba(0, 0, 0, 0.8);
+  background: #0d2f2b;
+  cursor: crosshair;
+}
+
+#hint {
+  color: #f5e6c8;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  opacity: 0.85;
+  text-align: center;
+}
